@@ -181,7 +181,7 @@ These are a few of the notebooks from Google's online Machine Learning course. S
 #exercice1
 #Aurelien BEAUDOUIN
 #validated by :
-!pip install _________
+!pip install pillow
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import numpy as np
@@ -208,10 +208,10 @@ from scipy.ndimage import gaussian_gradient_magnitude
 file=open("desktop/WC/romeo.txt",'r')
 text=file.read()
 # Create the WordCloud
-canvas_ _____=1920
-canvas_ ____=1080
+canvas_ width=1920
+canvas_ height=1080
 # Generate wordcloud
-wordcloud = ________ (width=canvas_width,height=canvas_height).generate(text)
+wordcloud = wordcloud(width=canvas_width,height=canvas_height).generate(text)
 wordcloud.to_file("simple_wordcloud.png")
 plt.figure(figsize = (10, 10), facecolor=None)
 
